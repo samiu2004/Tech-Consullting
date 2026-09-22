@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TechConsulting — AI & SaaS Tools for Modern Business</title>
+<meta name="description" content="Expert guides, comparisons, and reviews on AI and SaaS tools that automate workflows, cut costs, and scale modern businesses." />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #05060a;
+  --bg-2: #0a0d16;
+  --surface: rgba(255,255,255,0.03);
+  --surface-hover: rgba(255,255,255,0.06);
+  --border: rgba(255,255,255,0.08);
+  --border-hover: rgba(120,180,255,0.35);
+  --text: #e8ecf4;
+  --text-dim: #8b94a8;
+  --accent: #4d9fff;
+  --accent-2: #00e5c0;
+  --accent-3: #a855f7;
+  --gradient: linear-gradient(135deg, #4d9fff 0%, #00e5c0 100%);
+  --gradient-2: linear-gradient(135deg, #a855f7 0%, #4d9fff 100%);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* NAV */
+.nav-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px);
+  background: rgba(5,6,10,0.7);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.logo-mark { color: var(--accent-2); font-size: 1.2rem; }
+.accent { color: var(--accent-2); }
+
+.nav-links { display: flex; align-items: center; gap: 2rem; }
+
+.nav-links a {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--text); }
+
+.nav-cta {
+  padding: 0.55rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text) !important;
+  transition: all 0.25s;
+}
+
+.nav-cta:hover {
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10rem 1.5rem 6rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  margin-bottom: 1.5rem;
+  background: var(--surface);
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  box-shadow: 0 0 0 0 rgba(0,229,192,0.6);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0,229,192,0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(0,229,192,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,229,192,0); }
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 100px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s;
+  font-family: var(--font);
+}
+
+.btn-primary { background: var(--gradient); color: #05060a; }
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(77,159,255,0.3);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-ghost:hover { border-color: var(--accent); background: var(--surface); }
+
+.hero-stats { display: flex; gap: 3rem; }
+.stat { display: flex; flex-direction: column; }
+
+.stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* HERO VISUAL */
+.hero-visual {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+}
+
+.orb-1 { width: 280px; height: 280px; background: var(--accent); animation: float 8s ease-in-out infinite; }
+.orb-2 { width: 200px; height: 200px; background: var(--accent-2); top: 20%; right: 10%; animation: float 10s ease-in-out infinite reverse; }
+.orb-3 { width: 180px; height: 180px; background: var(--accent-3); bottom: 10%; left: 15%; animation: float 12s ease-in-out infinite; }
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -30px); }
+}
+
+.floating-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.3rem;
+  background: rgba(10,13,22,0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+.card-icon { font-size: 1.3rem; }
+.card-1 { top: 15%; left: 5%; animation: floatCard 6s ease-in-out infinite; }
+.card-2 { top: 45%; right: 0; animation: floatCard 7s ease-in-out infinite 0.5s; }
+.card-3 { bottom: 15%; left: 20%; animation: floatCard 8s ease-in-out infinite 1s; }
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+/* SECTIONS */
+.section { max-width: 1200px; margin: 0 auto; padding: 6rem 1.5rem; }
+
+.section-dark {
+  max-width: 100%;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-left: 0; padding-right: 0;
+}
+
+.section-dark > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section-header { text-align: center; margin-bottom: 4rem; }
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.8rem;
+}
+
+.section-sub { color: var(--text-dim); font-size: 1.05rem; }
+
+.grid { display: grid; gap: 1.5rem; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* CATEGORY CARDS */
+.category-card {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.category-card:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  transform: translateY(-4px);
+}
+
+.category-card:hover::before { transform: scaleX(1); }
+
+.cat-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+.category-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 700; }
+.category-card p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 1.2rem; }
+.cat-link { font-size: 0.85rem; color: var(--accent-2); font-weight: 600; }
+
+/* REVIEW CARDS */
+.review-card {
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.review-card:hover { border-color: var(--border-hover); transform: translateY(-4px); }
+
+.review-tag {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.3rem 0.75rem;
+  background: rgba(77,159,255,0.12);
+  color: var(--accent);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.review-card h3 { font-size: 1.15rem; margin-bottom: 0.7rem; line-height: 1.35; font-weight: 700; }
+.review-card p { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 1.5rem; flex-grow: 1; }
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border);
+}
+
+.review-meta { font-size: 0.8rem; color: var(--text-dim); }
+.review-link { font-size: 0.85rem; color: var(--accent-2); font-weight: 600; }
+
+/* GUIDE CARDS */
+.guide-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.3s;
+  align-items: flex-start;
+}
+
+.guide-card:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  transform: translateX(6px);
+}
+
+.guide-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: var(--gradient-2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.guide-card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; font-weight: 700; }
+.guide-card p { color: var(--text-dim); font-size: 0.9rem; }
+
+/* NEWSLETTER */
+.newsletter { padding-bottom: 8rem; }
+
+.newsletter-box {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(77,159,255,0.08), rgba(0,229,192,0.05));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter-box h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  letter-spacing: -0.02em;
+}
+
+.newsletter-box > p { color: var(--text-dim); margin-bottom: 2rem; }
+
+.newsletter-form {
+  display: flex;
+  gap: 0.8rem;
+  max-width: 480px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.85rem 1.2rem;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: var(--font);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.newsletter-form input:focus { border-color: var(--accent); }
+
+.form-msg {
+  display: block;
+  width: 100%;
+  color: var(--accent-2);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 4rem 1.5rem 2rem;
+  background: var(--bg-2);
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-desc {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+.footer h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.footer ul li { margin-bottom: 0.7rem; }
+.footer ul a { color: var(--text-dim); font-size: 0.9rem; transition: color 0.2s; }
+.footer ul a:hover { color: var(--accent-2); }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.disclosure { font-style: italic; }
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+  .hero { grid-template-columns: 1fr; padding-top: 8rem; min-height: auto; text-align: center; }
+  .hero-subtitle { margin-left: auto; margin-right: auto; }
+  .hero-actions { justify-content: center; }
+  .hero-stats { justify-content: center; }
+  .hero-visual { height: 360px; margin-top: 2rem; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    flex-direction: column;
+    background: rgba(5,6,10,0.98);
+    backdrop-filter: blur(20px);
+    padding: 1.5rem;
+    gap: 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: flex; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+  .stat-num { font-size: 1.5rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .section { padding: 4rem 1.5rem; }
+  .guide-card { flex-direction: column; gap: 0.8rem; }
+}
+</style>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<header class="nav-header">
+  <nav class="nav-container">
+    <a href="/" class="logo">
+      <span class="logo-mark">◆</span>
+      <span class="logo-text">Tech<span class="accent">Consulting</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#tools">AI Tools</a></li>
+      <li><a href="#saas">SaaS Reviews</a></li>
+      <li><a href="#guides">Guides</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter" class="nav-cta">Get Updates</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span>Updated for 2026</span>
+    </div>
+    <h1 class="hero-title">
+      Build Smarter with
+      <span class="gradient-text">AI &amp; SaaS Tools</span>
+    </h1>
+    <p class="hero-subtitle">
+      Independent reviews, deep comparisons, and implementation guides
+      for the tools that actually move the needle for modern businesses.
+    </p>
+    <div class="hero-actions">
+      <a href="#tools" class="btn btn-primary">Explore Tools →</a>
+      <a href="#guides" class="btn btn-ghost">Read Guides</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-count="120">0</span>
+        <span class="stat-label">Tools Reviewed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="45">0</span>
+        <span class="stat-label">In-Depth Guides</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="18">0</span>
+        <span class="stat-label">Categories</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="floating-card card-1">
+      <span class="card-icon">🤖</span>
+      <span>AI Assistants</span>
+    </div>
+    <div class="floating-card card-2">
+      <span class="card-icon">📊</span>
+      <span>CRM &amp; Analytics</span>
+    </div>
+    <div class="floating-card card-3">
+      <span class="card-icon">⚡</span>
+      <span>Automation</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="section-header">
+    <h2 class="section-title">Browse by <span class="gradient-text">Category</span></h2>
+    <p class="section-sub">Curated tools across the categories that matter most.</p>
+  </div>
+  <div class="grid grid-3">
+    <a href="#" class="category-card">
+      <div class="cat-icon">🧠</div>
+      <h3>AI Assistants</h3>
+      <p>Writing, coding, research, and workflow copilots.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+    <a href="#" class="category-card">
+      <div class="cat-icon">📈</div>
+      <h3>CRM &amp; Sales</h3>
+      <p>Pipelines, outreach, and revenue operations tools.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+    <a href="#" class="category-card">
+      <div class="cat-icon">⚙️</div>
+      <h3>Automation</h3>
+      <p>No-code and low-code workflow builders.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+    <a href="#" class="category-card">
+      <div class="cat-icon">🎨</div>
+      <h3>Design &amp; Video</h3>
+      <p>Generative design, video, and creative suites.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+    <a href="#" class="category-card">
+      <div class="cat-icon">🔒</div>
+      <h3>Cybersecurity</h3>
+      <p>VPNs, identity protection, and endpoint tools.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+    <a href="#" class="category-card">
+      <div class="cat-icon">💳</div>
+      <h3>FinTech</h3>
+      <p>Payments, invoicing, and financial ops platforms.</p>
+      <span class="cat-link">Explore →</span>
+    </a>
+  </div>
+</section>
+
+<section class="section section-dark" id="saas">
+  <div class="section-header">
+    <h2 class="section-title">Featured <span class="gradient-text">Reviews</span></h2>
+    <p class="section-sub">Hands-on analysis of the tools we actually use.</p>
+  </div>
+  <div class="grid grid-3">
+    <article class="review-card">
+      <div class="review-tag">AI Writing</div>
+      <h3>Jasper vs. Grammarly: Which AI Writer Fits Your Team?</h3>
+      <p>A side-by-side breakdown of tone, SEO features, and team pricing.</p>
+      <div class="review-footer">
+        <span class="review-meta">8 min read</span>
+        <a href="#" class="review-link">Read →</a>
+      </div>
+    </article>
+    <article class="review-card">
+      <div class="review-tag">CRM</div>
+      <h3>HubSpot vs. Monday: The SMB Showdown</h3>
+      <p>Which platform scales better for teams under 50 people?</p>
+      <div class="review-footer">
+        <span class="review-meta">11 min read</span>
+        <a href="#" class="review-link">Read →</a>
+      </div>
+    </article>
+    <article class="review-card">
+      <div class="review-tag">Security</div>
+      <h3>NordVPN vs. Surfshark for Remote Teams</h3>
+      <p>Speed, device limits, and business-tier pricing compared.</p>
+      <div class="review-footer">
+        <span class="review-meta">6 min read</span>
+        <a href="#" class="review-link">Read →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="guides">
+  <div class="section-header">
+    <h2 class="section-title">Implementation <span class="gradient-text">Guides</span></h2>
+    <p class="section-sub">Step-by-step playbooks, not just tool lists.</p>
+  </div>
+  <div class="grid grid-2">
+    <a href="#" class="guide-card">
+      <div class="guide-num">01</div>
+      <div>
+        <h3>Automate Your Client Onboarding with AI</h3>
+        <p>A 5-step workflow using no-code tools and AI agents.</p>
+      </div>
+    </a>
+    <a href="#" class="guide-card">
+      <div class="guide-num">02</div>
+      <div>
+        <h3>Build a Sales Pipeline That Runs Itself</h3>
+        <p>Connecting CRM, email, and scheduling into one flow.</p>
+      </div>
+    </a>
+    <a href="#" class="guide-card">
+      <div class="guide-num">03</div>
+      <div>
+        <h3>Cut SaaS Costs by 30% Without Losing Tools</h3>
+        <p>An audit framework for overlapping subscriptions.</p>
+      </div>
+    </a>
+    <a href="#" class="guide-card">
+      <div class="guide-num">04</div>
+      <div>
+        <h3>Choose the Right AI Assistant for Your Industry</h3>
+        <p>Decision matrix for legal, health, ecommerce, and agencies.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="section newsletter" id="newsletter">
+  <div class="newsletter-box">
+    <h2>Get the Weekly <span class="gradient-text">Tech Brief</span></h2>
+    <p>One email. The best AI and SaaS tools, guides, and deals. No spam.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('.form-msg').textContent='✓ Subscribed (demo)';">
+      <input type="email" placeholder="you@company.com" required />
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+      <span class="form-msg"></span>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="about">
+  <div class="footer-grid">
+    <div>
+      <a href="/" class="logo">
+        <span class="logo-mark">◆</span>
+        <span class="logo-text">Tech<span class="accent">Consulting</span></span>
+      </a>
+      <p class="footer-desc">
+        Independent reviews and guides on AI and SaaS tools for modern businesses.
+      </p>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">AI Assistants</a></li>
+        <li><a href="#">CRM &amp; Sales</a></li>
+        <li><a href="#">Automation</a></li>
+        <li><a href="#">Cybersecurity</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">All Reviews</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Comparisons</a></li>
+        <li><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">Affiliate Disclosure</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 TechConsulting.online — All rights reserved.</p>
+    <p class="disclosure">This site contains affiliate links. We may earn a commission at no extra cost to you.</p>
+  </div>
+</footer>
+
+<script>
+(function initCanvas() {
+  var canvas = document.getElementById('bg-canvas');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var particles = [];
+  var w, h;
+
+  function resize() {
+    w = canvas.width = window.innerWidth;
+    h = canvas.height = window.innerHeight;
+  }
+
+  function createParticles() {
+    var count = Math.min(80, Math.floor(w / 20));
+    particles = [];
+    for (var i = 0; i < count; i++) {
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        r: Math.random() * 1.5 + 0.5
+      });
+    }
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    for (var i = 0; i < particles.length; i++) {
+      for (var j = i + 1; j < particles.length; j++) {
+        var dx = particles[i].x - particles[j].x;
+        var dy = particles[i].y - particles[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 130) {
+          ctx.beginPath();
+          ctx.strokeStyle = 'rgba(77, 159, 255, ' + (0.12 * (1 - dist / 130)) + ')';
+          ctx.lineWidth = 0.6;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+    particles.forEach(function(p) {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0 || p.x > w) p.vx *= -1;
+      if (p.y < 0 || p.y > h) p.vy *= -1;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(0, 229, 192, 0.5)';
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  createParticles();
+  draw();
+
+  window.addEventListener('resize', function() {
+    resize();
+    createParticles();
+  });
+})();
+
+(function initNav() {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (!toggle || !links) return;
+  toggle.addEventListener('click', function() {
+    links.classList.toggle('open');
+  });
+})();
+
+(function initCounters() {
+  var counters = document.querySelectorAll('.stat-num');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var current = 0;
+      var step = Math.max(1, Math.floor(target / 50));
+      var timer = setInterval(function() {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        el.textContent = current;
+      }, 25);
+      observer.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(function(c) { observer.observe(c); });
+})();
+</script>
+
+</body>
+</html>
