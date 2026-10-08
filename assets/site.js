@@ -34,7 +34,7 @@
         var dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < 130) {
           ctx.beginPath();
-          ctx.strokeStyle = 'rgba(0, 180, 216, ' + (0.20 * (1 - dist / 130)) + ')';
+          ctx.strokeStyle = 'rgba(255, 0, 127, ' + (0.20 * (1 - dist / 130)) + ')';
           ctx.lineWidth = 0.6;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
@@ -49,7 +49,7 @@
       if (p.y < 0 || p.y > h) p.vy *= -1;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(0, 230, 118, 0.65)';
+      ctx.fillStyle = 'rgba(98, 0, 238, 0.65)';
       ctx.fill();
     });
     requestAnimationFrame(draw);
