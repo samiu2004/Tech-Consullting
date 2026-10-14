@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /archive/
+Disallow: /editorial-drafts/
+Disallow: /output/
+Disallow: /publish-copy/
+Disallow: /brand/
+Sitemap: https://techconsulting.online/sitemap.xml
