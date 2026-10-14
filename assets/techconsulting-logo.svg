@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">TechConsulting logo</title>
+  <path fill="#6200EE" d="M28 24h224a15 15 0 0 1 0 30h-88c-12 0-19 8-19 21v27c0 17 8 23 20 17l19-11 13 22-27 18c-19 13-34 5-34-14v110a15 15 0 0 1-30 0V72c0-12-7-18-18-18H28a15 15 0 0 1 0-30Z"/>
+  <path fill="#FF007F" d="M250 90c10 1 16 8 16 17 0 11-9 17-19 15-36-7-60 14-60 50s25 58 61 49c11-3 19 4 19 14 0 8-5 14-13 17-52 16-96-17-96-79 0-55 35-89 92-83Z"/>
+</svg>
