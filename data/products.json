@@ -1,0 +1,853 @@
+{
+  "dataset": "TechConsulting product dataset",
+  "version": 1,
+  "updated": "2026-11-13",
+  "note": "Internal dataset. Every price and commission carries a verification status. A figure with status verified was checked against the official page named in sourceUrl on 13 Nov 2026. Anything else is unchecked and must not appear on a reader-facing page as a fact. Commissions are internal only and must never appear on reader-facing pages. No price or commission may appear on a reader-facing page unless its record is verified.",
+  "products": [
+    {
+      "id": "syllaby",
+      "name": "Syllaby.io",
+      "officialUrl": "https://syllaby.io/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "faceless video creation",
+        "script writing",
+        "video scheduling"
+      ],
+      "audiences": [
+        "creators",
+        "small teams"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Prices and commission verified against official pages 13 Nov 2026.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "30% recurring commission for life",
+      "affiliateCommissionStatus": "verified",
+      "affiliateCommissionSourceUrl": "https://syllaby.firstpromoter.com/",
+      "affiliateCommissionNotes": "The $100 minimum payout is unchecked: the official FirstPromoter page states no payout threshold."
+    },
+    {
+      "id": "pictory",
+      "name": "Pictory",
+      "officialUrl": "https://pictory.ai/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "script to video",
+        "short video creation",
+        "captions"
+      ],
+      "audiences": [
+        "creators",
+        "marketers"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Price verified and commission headline verified against official pages 13 Nov 2026.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "Up to 50% recurring",
+      "affiliateCommissionStatus": "verified_headline_only",
+      "affiliateCommissionSourceUrl": "https://pictory.ai/partnernow",
+      "affiliateCommissionNotes": "Tier thresholds (20% / 30% / 40% / 50% by referral count) are not stated on the official page, so record only up to 50% recurring."
+    },
+    {
+      "id": "invideo",
+      "name": "InVideo",
+      "officialUrl": "https://invideo.io/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "AI video generation",
+        "video editing"
+      ],
+      "audiences": [
+        "creators"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Price and commission verified against official pages 13 Nov 2026.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "50% on monthly plans / 25% on annual plans, first billing cycle only",
+      "affiliateCommissionStatus": "verified",
+      "affiliateCommissionSourceUrl": "https://invideo.io/make/affiliate-program/",
+      "affiliateCommissionNotes": "First billing cycle only, never recurring. Official FAQ states commissions apply only for the first billing cycle. 120-day cookie."
+    },
+    {
+      "id": "synthesia",
+      "name": "Synthesia",
+      "officialUrl": "https://www.synthesia.io/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "avatar video",
+        "training video",
+        "explainer video"
+      ],
+      "audiences": [
+        "creators",
+        "trainers",
+        "teams"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Price verified and commission rate verified against official pages 13 Nov 2026.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "25% commission on Starter and Creator plan payments",
+      "affiliateCommissionStatus": "verified_rate_only",
+      "affiliateCommissionSourceUrl": "https://www.synthesia.io/partners/affiliates",
+      "affiliateCommissionNotes": "60-day cookie. The 12-month cap is not stated on the official affiliates page and is unchecked. The mid-tier plan is now called Pro, not Creator."
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "officialUrl": "https://www.heygen.com/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "avatar video",
+        "video translation",
+        "talking head video"
+      ],
+      "audiences": [
+        "creators"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Price and commission verified against official pages 13 Nov 2026. The old 35% for 3 months claim is outdated and corrected.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "Tiered 20% / 25% / 30% for 6 months",
+      "affiliateCommissionStatus": "verified",
+      "affiliateCommissionSourceUrl": "https://www.heygen.com/geniverse/affiliate-program",
+      "affiliateCommissionNotes": "Base under 100 conversions 20%, Growth 100 to 299 conversions 25%, Top 300 or more 30%. 30-day tracking, $100 minimum payout, PayPal. Programme gate: 5,000 or more followers on one platform, original video content only, no blog or SEO-only promotion."
+    },
+    {
+      "id": "opusclip",
+      "name": "OpusClip",
+      "officialUrl": "https://www.opus.pro/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "short clip creation",
+        "podcast clipping",
+        "captions"
+      ],
+      "audiences": [
+        "creators",
+        "podcasters"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Price and commission verified against official pages 13 Nov 2026.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "25% recurring commission through the first year",
+      "affiliateCommissionStatus": "verified",
+      "affiliateCommissionSourceUrl": "https://www.opus.pro/affiliate",
+      "affiliateCommissionNotes": "$20 minimum payout, PayPal, paid on the 15th monthly. The affiliate page FAQ contradicts its own terms on duration; the 12-month cap in the terms governs, so do not publish lifetime."
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "officialUrl": "https://elevenlabs.io/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "voiceover",
+        "voice cloning",
+        "dubbing",
+        "audiobook narration"
+      ],
+      "audiences": [
+        "creators",
+        "podcasters"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "documentation-only",
+      "evidenceNotes": "Listed on content-creation.html, checked 13 Nov 2026. Official pages could not be opened on 13 Nov 2026 (domain blocked by policy), so price and commission stay unchecked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": "22% recurring for 12 months (claimed, unverified)",
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": "https://elevenlabs.io/affiliates",
+      "affiliateCommissionNotes": "Claimed 22% for 12 months. The official affiliate pages could not be opened, so this is not verified. Re-check from an unblocked browser before publishing."
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "officialUrl": "https://chatgpt.com/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "AI assistance",
+        "writing",
+        "research"
+      ],
+      "audiences": [
+        "creators",
+        "founders"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "officialUrl": "https://claude.ai/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "AI assistance",
+        "writing workflows"
+      ],
+      "audiences": [
+        "creators",
+        "founders"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "officialUrl": "https://gemini.google.com/",
+      "primaryCategory": "Content Creation",
+      "supportedTasks": [
+        "AI assistance"
+      ],
+      "audiences": [
+        "creators",
+        "founders"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "officialUrl": "https://github.com/features/copilot",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "coding assistance"
+      ],
+      "audiences": [
+        "developers"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "officialUrl": "https://cursor.com/",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "AI code editing"
+      ],
+      "audiences": [
+        "developers"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "officialUrl": "https://n8n.io/",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "workflow automation"
+      ],
+      "audiences": [
+        "founders",
+        "small teams"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "officialUrl": "https://www.cloudflare.com/",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "hosting",
+        "developer services"
+      ],
+      "audiences": [
+        "founders",
+        "developers"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "officialUrl": "https://www.digitalocean.com/",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "cloud hosting",
+        "VPS services"
+      ],
+      "audiences": [
+        "founders",
+        "developers"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    },
+    {
+      "id": "proton-vpn",
+      "name": "Proton VPN",
+      "officialUrl": "https://protonvpn.com/",
+      "primaryCategory": "SaaS and Automation",
+      "supportedTasks": [
+        "VPN"
+      ],
+      "audiences": [
+        "creators",
+        "founders"
+      ],
+      "platforms": [
+        "web"
+      ],
+      "testingStatus": "unchecked",
+      "evidenceNotes": "Listed on tools.html as a directory entry, checked 13 Nov 2026. Pricing not checked. The VPN and Remote Work hub is a future route; filed under SaaS and Automation for now.",
+      "affiliateStatus": "not_joined",
+      "affiliateDestination": null,
+      "affiliateCommission": null,
+      "affiliateCommissionStatus": "unchecked",
+      "affiliateCommissionSourceUrl": null,
+      "affiliateCommissionNotes": "No affiliate programme relationship confirmed."
+    }
+  ],
+  "plans": [
+    {
+      "productId": "syllaby",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 9,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://syllaby.io/pricing-plan/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Monthly billing only."
+    },
+    {
+      "productId": "syllaby",
+      "planName": "Basic",
+      "billingTerm": "monthly",
+      "price": 29,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://syllaby.io/pricing-plan/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified"
+    },
+    {
+      "productId": "syllaby",
+      "planName": "Basic",
+      "billingTerm": "annual",
+      "price": 24.67,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://syllaby.io/pricing-plan/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Billed $296 per year, shown as $24.67 per month."
+    },
+    {
+      "productId": "pictory",
+      "planName": "Starter",
+      "billingTerm": "annual",
+      "price": 25,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://pictory.ai/pricing/?ref=2jliz",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Billed annually. Black Friday offer seen at check applied to Professional, not Starter."
+    },
+    {
+      "productId": "pictory",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 29,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://pictory.ai/pricing/?ref=2jliz",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Billed monthly."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 20,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed monthly. Price varies by visitor: InVideo serves more than one plan layout, and some visitors see a different layout with different prices."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Starter",
+      "billingTerm": "annual",
+      "price": 10,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed annually. Price varies by visitor (see monthly Starter note)."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Plus",
+      "billingTerm": "monthly",
+      "price": 60,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed monthly. Price varies by visitor."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Plus",
+      "billingTerm": "annual",
+      "price": 30,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed annually. Price varies by visitor."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Max",
+      "billingTerm": "monthly",
+      "price": 150,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed monthly. Price varies by visitor."
+    },
+    {
+      "productId": "invideo",
+      "planName": "Max",
+      "billingTerm": "annual",
+      "price": 75,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": "Per seat",
+      "sourceUrl": "https://invideo.io/pricing/",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Per seat, billed annually. Price varies by visitor."
+    },
+    {
+      "productId": "synthesia",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 19,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": "Free Basic plan available, as stated on content-creation.html 13 Nov 2026.",
+      "usageAllowances": null,
+      "sourceUrl": "https://www.synthesia.io/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "$9 in the first month."
+    },
+    {
+      "productId": "synthesia",
+      "planName": "Starter",
+      "billingTerm": "annual",
+      "price": 14,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": "Free Basic plan available, as stated on content-creation.html 13 Nov 2026.",
+      "usageAllowances": null,
+      "sourceUrl": "https://www.synthesia.io/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Billed annually."
+    },
+    {
+      "productId": "synthesia",
+      "planName": "Pro",
+      "billingTerm": "monthly",
+      "price": 89,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.synthesia.io/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "$49 in the first month. Mid-tier plan is now called Pro, not Creator."
+    },
+    {
+      "productId": "heygen",
+      "planName": "Creator",
+      "billingTerm": "monthly",
+      "price": 29,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.heygen.com/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified"
+    },
+    {
+      "productId": "heygen",
+      "planName": "Creator",
+      "billingTerm": "annual",
+      "price": 24,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.heygen.com/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Billed annually."
+    },
+    {
+      "productId": "heygen",
+      "planName": "Pro",
+      "billingTerm": "monthly",
+      "price": 49,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.heygen.com/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "From $49 per month."
+    },
+    {
+      "productId": "heygen",
+      "planName": "Business",
+      "billingTerm": "monthly",
+      "price": 149,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.heygen.com/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified",
+      "notes": "Plus $20 per seat."
+    },
+    {
+      "productId": "opusclip",
+      "planName": "Free",
+      "billingTerm": "monthly",
+      "price": 0,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.opus.pro/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified"
+    },
+    {
+      "productId": "opusclip",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 15,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": "Free plan available, as stated on content-creation.html 13 Nov 2026.",
+      "usageAllowances": null,
+      "sourceUrl": "https://www.opus.pro/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified"
+    },
+    {
+      "productId": "opusclip",
+      "planName": "Pro",
+      "billingTerm": "monthly",
+      "price": 29,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.opus.pro/pricing",
+      "verificationDate": "2026-11-13",
+      "verificationStatus": "verified"
+    },
+    {
+      "productId": "opusclip",
+      "planName": "Pro",
+      "billingTerm": "annual",
+      "price": 14.5,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.opus.pro/pricing",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Reported by third parties only; not found on the official pricing page fetched 13 Nov 2026."
+    },
+    {
+      "productId": "elevenlabs",
+      "planName": "Starter",
+      "billingTerm": "monthly",
+      "price": 6,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": "Free plan available, as stated on content-creation.html 13 Nov 2026.",
+      "usageAllowances": null,
+      "sourceUrl": "https://elevenlabs.io/pricing",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Claimed Starter $6 per month. The official pricing page could not be opened on 13 Nov 2026 (domain blocked by policy), so the figure is not verified. Re-check from an unblocked browser before publishing."
+    },
+    {
+      "productId": "chatgpt",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://chatgpt.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "claude",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://claude.ai/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "gemini",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://gemini.google.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "github-copilot",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://github.com/features/copilot",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "cursor",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://cursor.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "n8n",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://n8n.io/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "cloudflare",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.cloudflare.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "digitalocean",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://www.digitalocean.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    },
+    {
+      "productId": "proton-vpn",
+      "planName": "Paid plans",
+      "billingTerm": "monthly",
+      "price": null,
+      "currency": "USD",
+      "renewalPrice": null,
+      "freePlanRestrictions": null,
+      "usageAllowances": null,
+      "sourceUrl": "https://protonvpn.com/",
+      "verificationDate": null,
+      "verificationStatus": "unchecked",
+      "notes": "Pricing not checked against an official pricing page."
+    }
+  ]
+}
