@@ -55,3 +55,19 @@
 .hero-today-card span{display:block;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;line-height:1.35;color:#EAF6EE}
 .hero-today-card time{display:block;margin-top:10px;font-size:.72rem;color:#9ED2B0}
 @media(max-width:800px){.hero-today-grid{grid-template-columns:1fr}.home-hero{margin:16px 16px 0;border-radius:20px;padding:52px 20px 48px}}
+
+/* Shine + green header tabs 2026-11-12: brighter premium green, cache-buster ?v=shine-20261112.
+   Palette B only. No em dash. No header CTA. Eyebrow text unchanged. */
+.home-hero{overflow:hidden;background:radial-gradient(900px 420px at 50% -8%,rgba(107,191,143,.38),rgba(107,191,143,0) 62%),radial-gradient(700px 380px at 88% 112%,rgba(46,139,87,.55),rgba(46,139,87,0) 65%),linear-gradient(160deg,#0F2E1F 0%,#1E5B3A 58%,#247A4B 100%);border:1px solid rgba(107,191,143,.5);box-shadow:inset 0 1px 0 rgba(234,246,238,.4),0 24px 60px rgba(15,46,31,.28)}
+.home-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(234,246,238,0) 30%,rgba(234,246,238,.13) 45%,rgba(107,191,143,.16) 52%,rgba(234,246,238,0) 68%);pointer-events:none}
+.home-hero .hero-main{position:relative;z-index:1}
+.home-hero .overline{background:linear-gradient(90deg,#2E8B57,#1E5B3A);border:1px solid #6BBF8F;color:#EAF6EE;box-shadow:0 4px 16px rgba(15,46,31,.35)}
+.home-hero h1 em{color:#6BBF8F}
+@supports((background-clip:text) or (-webkit-background-clip:text)){.home-hero h1 em{background:linear-gradient(92deg,#6BBF8F 0%,#D6EDDE 55%,#6BBF8F 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}}
+.nav-inner{box-shadow:0 12px 32px rgba(15,46,31,.16),0 2px 8px rgba(15,46,31,.08),inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(191,227,203,.6)}
+.nav-inner ul{gap:8px}
+.nav-inner li a{display:inline-block;padding:8px 14px;border-radius:999px;background:#BFE3CB;color:#0F2E1F;font-weight:600;text-decoration:none;transition:background .18s ease,color .18s ease}
+.nav-inner li a:hover{background:#9ED2B0;color:#0F2E1F}
+.nav-inner a[aria-current]{background:#1E5B3A;color:#EAF6EE}
+.nav-inner a[aria-current]:hover{background:#143D27;color:#EAF6EE}
+@media(max-width:800px){.nav-inner ul{gap:10px}.nav-inner ul li a{display:block;text-align:center;padding:11px 14px}}
