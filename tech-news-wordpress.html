@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WordPress flaw lets attackers run code during updates | TechConsulting</title><meta name="description" content="The most dangerous moment for a WordPress site is not when it is running. It is when it is updating."><link rel="canonical" href="https://techconsulting.online/tech-news-wordpress.html"><meta property="og:title" content="WordPress flaw lets attackers run code during updates"><meta property="og:description" content="The most dangerous moment for a WordPress site is not when it is running. It is when it is updating."><meta property="og:type" content="article"><meta property="og:url" content="https://techconsulting.online/tech-news-wordpress.html"><link rel="icon" type="image/svg+xml" href="assets/techconsulting-logo.svg?v=logo-a-20261112"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"><link rel="stylesheet" href="assets/publication.css?v=fit-header-20261113"><script src="assets/publication.js?v=f2cd3cb0f9be" defer></script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "WordPress flaw lets attackers run code during updates", "description": "The most dangerous moment for a WordPress site is not when it is running. It is when it is updating.", "datePublished": "2026-11-03", "dateModified": "2026-11-13", "author": {"@type": "Organization", "name": "TechConsulting Editorial", "url": "https://techconsulting.online/about.html"}, "publisher": {"@type": "Organization", "name": "TechConsulting", "logo": {"@type": "ImageObject", "url": "https://techconsulting.online/assets/techconsulting-logo.svg"}}, "mainEntityOfPage": "https://techconsulting.online/tech-news-wordpress.html"}</script></head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav-inner" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="TechConsulting home"><svg class="brand-mark" width="48" height="48" viewBox="0 0 120 120" role="img" aria-labelledby="brand-logo-title"><title id="brand-logo-title">TechConsulting logo</title><path fill="#0F2E1F" d="M14 28 H58 V42 H43 V92 H29 V42 H14 Z"/><path fill="#2E8B57" d="M66 28 H106 V42 H80 V78 H106 V92 H66 Z"/><rect x="14" y="100" width="92" height="6" fill="#2E8B57"/></svg><span class="brand-wordmark">TechConsulting</span></a><button class="menu-toggle" aria-label="Toggle menu" aria-controls="main-links" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button><ul id="main-links"><li><a href="content-creation.html" >Content Creation</a></li><li><a href="saas-distribution.html" >SaaS Distribution</a></li><li><a href="comparisons.html" >Comparisons</a></li><li><a href="guides.html" >Guides</a></li><li><a href="tech-news.html" aria-current="page">Tech News</a></li></ul></nav></header>
+<main id="main">
+<div class="page-wrap">
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+<a href="index.html">Home</a> / <a href="tech-news.html">Tech News</a> / <span>WordPress</span>
+</nav>
+</div>
+<header class="page-intro">
+<p class="overline">WordPress / Website security</p>
+<h1>WordPress flaw lets attackers run code during updates</h1>
+<p class="intro-copy">The most dangerous moment for a WordPress site is not when it is running. It is when it is updating.</p>
+</header>
+<div class="page-wrap">
+<div class="article-meta">
+<span>By TechConsulting Editorial</span>
+<time datetime="2026-11-03">Published 3 November 2026</time>
+<span>Sources checked 13 November 2026</span>
+<span>2 min read</span>
+</div>
+<div class="article-layout">
+<article class="article-body">
+<figure class="news-image"><img src="assets/news/wordpress.jpg" alt="A laptop on a desk" width="1200" height="750" loading="lazy"><figcaption>Photo: Raimond Spekking via Wikimedia Commons (CC BY-SA 4.0). A laptop, used as an illustration.</figcaption></figure>
+<p>The most dangerous moment for a WordPress site is not when it is running. It is when it is updating.</p><p>A race condition in the way WordPress applies core updates, CVE-2026-119977, lets an attacker with no login at all run code during the upgrade window. The attacker reaches a predictable staging folder while the site is updating. It affects WordPress 4.7 to 7.1.3. WordPress fixed the flaw on 28 October, and CISA added it to its catalogue on 3 November, with a federal deadline of 6 November.</p><p>Attackers moved fast. Wordfence counted more than 18,500 probes of the staging paths in the first 21 hours. Those were attempts, not compromises, but Wordfence reports it is blocking thousands of attempts a day. The lesson is blunt. Twice in one week, the maintenance path was the attack path, and a patch that exists is not the same as a patch that is installed.</p><p><strong>Why it matters to you:</strong> if your site, or a site you pay someone to run, uses WordPress, the risk window is the update itself. An attacker needs no password and no account. They only need to arrive at the right second, while files are landing in a folder whose address they can guess.</p><div class="do-now"><h4>What to do now</h4><ul><li>Update to WordPress 7.1.4, or the fixed release for your branch, for example 7.0.8, 6.9.11, or 6.8.12.</li><li>Block public web access to the wp-content/upgrade folder.</li><li>Do not leave upgrades half done. Finish the update, then check the site still works.</li><li>If someone else manages your site, ask them today which WordPress version you are on.</li></ul></div><p class="news-source">Source: <a href="https://taylorbaines.co.uk/threat-and-vulnerability-round-up-week-ending-8-november-2026/">Taylor Baines</a></p>
+<section class="article-related">
+<h2>Keep reading</h2>
+<p>
+<a href="tech-news-amadeus.html">Amadeus breach widens as Singapore Airlines reports 46,000 records affected →</a>
+</p>
+<p>
+<a href="tech-news-iris-plaza.html">Iris Plaza breach may have exposed up to 7.7 million people →</a>
+</p>
+<p>
+<a href="tech-news.html">Back to Tech News</a>
+</p>
+</section>
+</article>
+</div>
+</div>
+</main>
+<footer class="pub-footer"><div class="footer-top"><div><a class="footer-brand" href="index.html">TechConsulting</a><p>Understand the tools. Make your next move.</p></div><nav aria-label="Footer navigation"><a href="content-creation.html">Content Creation</a><a href="saas-distribution.html">SaaS Distribution</a><a href="comparisons.html">Comparisons</a><a href="guides.html">Guides</a><a href="tech-news.html">Tech News</a><a href="articles.html">All articles</a><a href="about.html">About</a><a href="editorial-standards.html">Editorial standards</a><a href="affiliate-disclosure.html">Affiliate disclosure</a><a href="contact.html">Contact</a><a href="policies.html">Privacy & terms</a></nav></div><p class="footer-note">Independent information for content creators and SaaS founders. Some future recommendations may include clearly disclosed affiliate links. No affiliate tracking links are currently active.</p><p class="copyright">© 2026 TechConsulting</p></footer>
+</body>
+</html>

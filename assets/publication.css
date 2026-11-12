@@ -81,3 +81,27 @@
 .do-now ul{margin:0;padding-left:20px}
 .do-now li{margin:6px 0;font-size:.92rem;color:#0F2E1F}
 @media(max-width:540px){.story-card{padding:20px}.news-feature{padding:20px}}
+
+/* Header fits its items 2026-11-13: the capsule hugs the logo and tabs, so there is no blank space on the right. On mobile it stays a full-width bar with the menu toggle. Cache-buster ?v=fit-header-20261113. */
+.nav-inner{width:max-content;max-width:calc(100% - 32px);justify-content:center}
+.nav-inner ul{flex:none}
+@media(max-width:800px){.nav-inner{width:auto;max-width:none;justify-content:space-between}}
+
+/* Tech News hero 2026-11-13: centred intro, topic chips, and a featured top-story block. Background stays pale; no colour panel behind the hero. */
+.news-intro{text-align:center}
+.news-intro .intro-copy{margin-left:auto;margin-right:auto}
+.news-hero-date{font-size:.85rem;color:#2F5D43;margin:16px 0 0}
+.topic-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;list-style:none;margin:22px 0 0;padding:0}
+.topic-chips a{display:inline-block;background:#BFE3CB;border-radius:999px;padding:8px 16px;font-size:.85rem;font-weight:600;text-decoration:none}
+.topic-chips a:hover{background:#9ED2B0}
+.news-hero-feature{background:#fff;border:1px solid #BFE3CB;border-top:3px solid #1E5B3A;border-radius:14px;box-shadow:0 8px 24px rgba(15,46,31,.07);overflow:hidden;margin:0 0 8px}
+.news-hero-photo{margin:0}
+.news-hero-photo img{width:100%;height:auto;display:block}
+.news-hero-photo figcaption{font-size:.75rem;color:#2F5D43;margin:10px 16px 0;line-height:1.5}
+.news-hero-text{padding:24px 28px 28px}
+.news-hero-text h2{margin:0 0 10px;font-size:1.7rem}
+.news-hero-text h2 a{text-decoration:none}
+.news-hero-text h2 a:hover{text-decoration:underline;text-decoration-color:#6BBF8F}
+.news-hero-text>p{color:#2F5D43}
+.news-hero-text .news-hero-date{margin:14px 0 16px}
+@media(min-width:800px){.news-hero-feature{display:grid;grid-template-columns:1.15fr 1fr}.news-hero-photo img{height:100%;object-fit:cover}.news-hero-text{padding:32px}}
