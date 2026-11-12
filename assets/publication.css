@@ -56,3 +56,9 @@
 .nav-inner a[aria-current]{background:#1E5B3A;color:#EAF6EE}
 .nav-inner a[aria-current]:hover{background:#143D27;color:#EAF6EE}
 @media(max-width:800px){.nav-inner ul{gap:10px}.nav-inner ul li a{display:block;text-align:center;padding:9px 12px}}
+
+.news-feature{border-top:3px solid #1E5B3A;padding:28px 0 8px}
+.news-feature h2{margin:0 0 10px}
+.news-source{font-size:.88rem;color:#2F5D43;margin:14px 0 0}
+.news-source a{color:#1E5B3A;font-weight:600}
+.news-note{font-size:.9rem;color:#2F5D43;margin:28px 0 0}
