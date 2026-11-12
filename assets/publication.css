@@ -105,3 +105,15 @@
 .news-hero-text>p{color:#2F5D43}
 .news-hero-text .news-hero-date{margin:14px 0 16px}
 @media(min-width:800px){.news-hero-feature{display:grid;grid-template-columns:1.15fr 1fr}.news-hero-photo img{height:100%;object-fit:cover}.news-hero-text{padding:32px}}
+
+/* Restrained emerald glow 2026-11-13: only rgba(46,139,87,0.12) ambient and rgba(46,139,87,0.22) hover. No layout movement, no text glow. */
+.home-hero{background:radial-gradient(ellipse 65% 55% at 50% 0%,rgba(46,139,87,0.12),rgba(46,139,87,0) 70%),linear-gradient(180deg,#EAF6EE 0%,#FFFFFF 100%)}
+.nav-inner{box-shadow:0 12px 32px rgba(15,46,31,.16),0 2px 8px rgba(15,46,31,.08),0 18px 36px rgba(46,139,87,0.12),inset 0 1px 0 rgba(255,255,255,.7),inset 0 -1px 0 rgba(191,227,203,.6)}
+.story-card,.hero-today-card,.hero-btn,.hero-btn-light,.search-row button{transition:box-shadow .18s ease}
+.hero-btn:hover{box-shadow:0 8px 24px rgba(46,139,87,0.22)}
+.hero-btn-light:hover{box-shadow:0 8px 24px rgba(46,139,87,0.22)}
+.search-row button:hover{box-shadow:0 8px 24px rgba(46,139,87,0.22)}
+.story-card:hover{box-shadow:0 12px 32px rgba(46,139,87,0.22)}
+.hero-today-card:hover{box-shadow:0 12px 32px rgba(46,139,87,0.22)}
+.read-link:hover{box-shadow:0 0 0 3px rgba(46,139,87,0.22)}
+@media (prefers-reduced-motion:reduce){.home-hero,.nav-inner,.story-card,.hero-today-card,.hero-btn,.hero-btn-light,.search-row button,.read-link{transition:none}}
