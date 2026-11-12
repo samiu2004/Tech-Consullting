@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">TechConsulting logo — reverse, for dark green headers</title>
+  <desc>Logo A — Interlocked TC monogram, reverse version. Pale green block T and light green block C with a light green baseline bar, on a transparent background, so the mark stays readable on a dark green header (#1E5B3A / #0F2E1F). Palette B.</desc>
+  <path fill="#EAF6EE" d="M14 28 H58 V42 H43 V92 H29 V42 H14 Z"/>
+  <path fill="#6BBF8F" d="M66 28 H106 V42 H80 V78 H106 V92 H66 Z"/>
+  <rect x="14" y="100" width="92" height="6" fill="#6BBF8F"/>
+</svg>
