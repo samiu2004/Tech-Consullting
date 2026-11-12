@@ -62,3 +62,9 @@
 .news-source{font-size:.88rem;color:#2F5D43;margin:14px 0 0}
 .news-source a{color:#1E5B3A;font-weight:600}
 .news-note{font-size:.9rem;color:#2F5D43;margin:28px 0 0}
+
+/* Tech News story images */
+.news-image{margin:0 0 16px}
+.news-image img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid #A8D5B5}
+.news-image figcaption{font-size:.75rem;color:#2F5D43;margin-top:8px;line-height:1.5}
+.image-credit{font-size:.72rem;color:#2F5D43;margin-top:8px}
