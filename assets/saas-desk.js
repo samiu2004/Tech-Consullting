@@ -1,29 +1,4 @@
 (() => {
-  const desk = document.querySelector('.saas-desk');
-  if (desk) {
-    const select = desk.querySelector('#workflow-example');
-    const run = desk.querySelector('#workflow-run');
-    const demo = desk.querySelector('.sd-demo');
-    const status = desk.querySelector('#workflow-status');
-    const examples = {
-      lead: { trigger: 'New eligible enquiry', check: 'Owner, address, duplicates', action: 'Send once or flag for review', result: 'Example result: an eligible enquiry is assigned and checked before one response. Missing information goes to a person.' },
-      invoice: { trigger: 'Invoice reaches reminder date', check: 'Unpaid, no dispute or extension', action: 'Remind or pause for the owner', result: 'Example result: an outstanding invoice is reminded only after checking payment and dispute status.' },
-      onboarding: { trigger: 'Engagement is approved', check: 'Owner and required details', action: 'Prepare kickoff or request review', result: 'Example result: an approved client receives the next request. Missing essentials are flagged to the project owner.' }
-    };
-    function update() {
-      const example = examples[select.value];
-      ['trigger', 'check', 'action'].forEach(key => { desk.querySelector(`[data-flow="${key}"]`).textContent = example[key]; });
-      demo.classList.remove('is-run');
-      status.textContent = 'Illustration only. No accounts connected or messages sent.';
-    }
-    select.addEventListener('change', update);
-    run.addEventListener('click', () => {
-      demo.classList.add('is-run');
-      status.textContent = examples[select.value].result + ' Illustration only; no real action was taken.';
-    });
-    update();
-  }
-
   const form = document.querySelector('.sd-roi');
   if (!form) return;
   const inputs = [...form.querySelectorAll('input')];
