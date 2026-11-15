@@ -1,0 +1,33 @@
+RDP Hosting and Cloud PCs for Client Work: What to Check Before Buying
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Authorized workload:
+
+Applications:
+
+CPU/RAM/storage:
+
+OS edition and licensing:
+
+Named users/concurrent sessions:
+
+Region/data requirements:
+
+Authentication/admin owner:
+
+Backup and restore:
+
+Full bill:
+
+Actual connection test:
+
+Exit plan:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/rdp-hosting-client-work

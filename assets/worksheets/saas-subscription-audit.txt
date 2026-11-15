@@ -1,0 +1,33 @@
+SaaS Subscription Audit: Find Unused Seats Without Buying Another Tool
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Tool and edition:
+
+Business owner:
+
+Account administrator:
+
+Cost/currency/term:
+
+Paid seats:
+
+Usage evidence:
+
+Renewal and notice:
+
+Dependencies:
+
+Retain/resize/investigate/cancel:
+
+Approval:
+
+Billing verification:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/saas-subscription-audit

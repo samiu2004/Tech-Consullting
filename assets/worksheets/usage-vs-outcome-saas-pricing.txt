@@ -1,0 +1,33 @@
+Usage-Based vs Outcome-Based SaaS Pricing: What Could Change Your Bill?
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Charging unit:
+
+Definition:
+
+Included allowance:
+
+Minimum:
+
+Overage rate:
+
+Retry/duplicate behavior:
+
+Hard cap behavior:
+
+Meter access:
+
+Low/base/high scenario:
+
+Renewal-definition change:
+
+Source date:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/usage-vs-outcome-saas-pricing

@@ -1,0 +1,31 @@
+Automate Lead Follow-Up Without Duplicate Emails
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Trigger:
+
+Owner:
+
+Eligibility conditions:
+
+Duplicate key/send record:
+
+Send action:
+
+Wait interval:
+
+Reply/opt-out/bounce stop rule:
+
+Retry policy:
+
+Failure owner:
+
+Expected vs observed test result:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/automate-lead-follow-up

@@ -1,0 +1,31 @@
+AI Agents for Small Businesses: Test Permissions, Logs and Failure Handling
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Bounded task:
+
+Readable systems:
+
+Writable actions:
+
+Named connection identity:
+
+Approval gates:
+
+Uncertainty escalation:
+
+Available execution history:
+
+Cost event:
+
+Disable/recovery owner:
+
+Pilot scenario/result:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/ai-agents-small-business-checklist

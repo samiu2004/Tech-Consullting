@@ -1,0 +1,31 @@
+Cancel SaaS Without Losing Data or Missing a Notice Period
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Subscriber/purchase route:
+
+Notice/minimum term:
+
+Export scope:
+
+Readable export check:
+
+Dependent apps:
+
+Region-specific retention:
+
+Requested end date:
+
+Confirmed end date:
+
+Cancellation confirmation:
+
+Final bill check:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/cancel-saas-export-data

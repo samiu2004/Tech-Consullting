@@ -1,0 +1,35 @@
+SaaS Migration Checklist: Test the Data Before You Switch
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Business owner:
+
+Transfer owner:
+
+Data manifest:
+
+Recoverable export:
+
+Mapping:
+
+Sample import:
+
+Acceptance criteria:
+
+Known exclusions:
+
+Cutover window:
+
+Rollback trigger/owner:
+
+Monitoring:
+
+Closure approval:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/saas-migration-checklist

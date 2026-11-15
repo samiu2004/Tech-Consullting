@@ -1,0 +1,31 @@
+Client Onboarding Automation: What to Automate and What to Keep Human
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Approved engagement:
+
+Client owner:
+
+Required information:
+
+Automate/assist/human allocation:
+
+Approved document route:
+
+Missing-information status:
+
+Reminder stop:
+
+Kickoff handoff:
+
+Access approval:
+
+Test result:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/client-onboarding-automation

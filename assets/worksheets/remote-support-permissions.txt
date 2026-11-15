@@ -1,0 +1,31 @@
+Remote Client Support: Consent, Access and Revocation Checklist
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Client/device scope:
+
+Purpose and approval:
+
+Attended/unattended model:
+
+Named staff:
+
+Permissions:
+
+Timeout/login-screen tests:
+
+Log access/retention:
+
+Review/expiry:
+
+Revocation owner:
+
+Verified closeout:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/remote-support-permissions

@@ -1,0 +1,106 @@
+/* SaaS decision desk. Every layout rule is scoped to this hub or its guides. */
+.saas-desk{font-family:'Manrope',sans-serif;color:#223c32}
+.saas-desk .sd-wrap{max-width:1280px;margin:0 auto;padding:0 40px}
+.saas-desk .sd-breadcrumb{font-size:12px;color:#64726a;padding:30px 0 35px}
+.saas-desk .sd-breadcrumb a{text-decoration:none}
+.saas-desk .sd-kicker,.saas-article .sc-kicker{font-size:11px;letter-spacing:.13em;line-height:1.7;font-weight:700;color:#426952;text-transform:uppercase;margin:0 0 20px}
+.saas-desk .sd-hero{display:grid;grid-template-columns:1.25fr 1fr;gap:65px;align-items:center;padding:10px 0 60px}
+.saas-desk h1{font-family:'Sora',sans-serif;font-size:clamp(3.1rem,5.8vw,5.5rem);font-weight:700;letter-spacing:-.06em;line-height:1.09;margin:0 0 27px}
+.saas-desk h1 span{color:#376951}
+.saas-desk .sd-deck{max-width:510px;font-size:18px;line-height:1.9;color:#5a6c60;margin:0 0 28px}
+.saas-desk .sd-actions{display:flex;align-items:center;flex-wrap:wrap;gap:23px}
+.saas-desk .sd-inline{font-size:13px;font-weight:700;text-underline-offset:6px}
+.saas-desk .sd-hero-note{font-size:12px;color:#697b6d;line-height:1.8;margin:25px 0 0;max-width:360px}
+.saas-desk .sd-demo{padding:25px 28px;background:#182f28;color:#e3eee2;border:1px solid #3c5b49;border-radius:24px;box-shadow:0 20px 45px #203d2714;position:relative;overflow:hidden}
+.saas-desk .sd-demo-top{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:10px;letter-spacing:.1em;color:#b3cbb3;margin-bottom:25px}
+.saas-desk .sd-demo-dot{display:flex;gap:7px;align-items:center;letter-spacing:0;white-space:nowrap}
+.saas-desk .sd-demo-dot:before{content:'';width:5px;height:5px;border-radius:50%;background:#bad6a3}
+.saas-desk .sd-demo h2{color:#eef4e8;font-family:'Sora',sans-serif;font-size:27px;letter-spacing:-.04em;margin:0 0 23px}
+.saas-desk .sd-demo label{display:block;font-size:11px;margin-bottom:8px;color:#c2d4c0}
+.saas-desk .sd-demo select{font-family:inherit;font-size:14px;padding:12px 14px;border:1px solid #77917a;border-radius:9px;width:100%;color:#e9f2e2;background:#244236;min-height:46px}
+.saas-desk .sd-demo select option{background:#244236;color:#fff}
+.saas-desk .sd-flow{margin:23px 0;display:grid;justify-items:center}
+.saas-desk .sd-flow-node{background:#254637;border:1px solid #55755b;border-radius:10px;width:100%;padding:12px 15px;display:flex;gap:15px;align-items:center;transition:background .3s,border-color .3s}
+.saas-desk .sd-flow-node span{font-size:9px;letter-spacing:.12em;color:#b7cdb0;min-width:56px}
+.saas-desk .sd-flow-node strong{font-size:13px;color:#e6eee0;font-weight:600}
+.saas-desk .sd-flow-arrow{font-size:17px;color:#98b59a;line-height:1.4}
+.saas-desk .sd-demo.is-run .sd-flow-node{background:#345d43;border-color:#a4c18b}
+.saas-desk #workflow-run{width:100%;border:1px solid #d7e7c9;border-radius:100px;padding:12px 17px;font-size:13px;font-family:inherit;font-weight:700;background:#d7e7c9;color:#173723;display:flex;justify-content:space-between;cursor:pointer;transition:background .3s}
+.saas-desk #workflow-run:hover{background:#e4efdb}
+.saas-desk #workflow-status{min-height:43px;font-size:11px;line-height:1.8;margin:16px 0 0;color:#bed0bc}
+.saas-desk .sd-paths{border-top:1px solid #b9cbb8;border-bottom:1px solid #b9cbb8;padding:26px 0 28px;scroll-margin-top:130px}
+.saas-desk .sd-paths nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 30px}
+.saas-desk .sd-paths nav a{padding:15px 0;display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid #d4dfcf;text-decoration:none;font-size:14px;font-weight:600}
+.saas-desk .sd-paths nav a:hover{color:#287d4b;border-color:#4b845b}
+.saas-desk .sd-cluster{padding:50px 0 45px;border-bottom:1px solid #c9d7c3;scroll-margin-top:110px}
+.saas-desk .sd-cluster-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:35px;margin-bottom:30px}
+.saas-desk .sd-cluster-heading .sd-kicker{margin-bottom:10px}
+.saas-desk .sd-cluster h2{font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(2rem,3.3vw,3rem);line-height:1.2;letter-spacing:-.05em;margin:0;max-width:700px}
+.saas-desk .sd-cluster-heading>p{max-width:270px;font-size:13px;line-height:1.8;color:#657661;margin:0 0 3px}
+.saas-desk .sd-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.saas-desk .sd-story{border-top:2px solid #8da888;padding:22px 0 0;display:flex;flex-direction:column;align-items:start;min-width:0}
+.saas-desk .sd-story-type{font-size:11px;line-height:1.7;color:#64765e;margin:0 0 13px}
+.saas-desk .sd-story h3{font-family:'Sora',sans-serif;font-size:21px;font-weight:600;line-height:1.4;letter-spacing:-.04em;margin:0 0 17px}
+.saas-desk .sd-story h3 a{text-decoration:none;color:#173b29}
+.saas-desk .sd-story h3 a:hover{text-decoration:underline;text-underline-offset:5px}
+.saas-desk .sd-story>p:not(.sd-story-type){font-size:14px;line-height:1.9;color:#5c705b;margin:0 0 23px}
+.saas-desk .sd-story-link{font-size:12px;font-weight:700;display:flex;align-items:center;gap:20px;text-decoration:none;border-bottom:1px solid #9aad92;padding-bottom:7px;margin-top:auto}
+.saas-desk .sd-story-link:hover{gap:28px}
+.saas-desk .sd-tools{display:grid;grid-template-columns:1fr 1fr;gap:60px;background:#e7eddf;border-radius:20px;padding:38px 40px;margin:55px 0 35px}
+.saas-desk .sd-tools h2{font-family:'Sora',sans-serif;font-size:34px;line-height:1.2;letter-spacing:-.05em;margin:0 0 20px}
+.saas-desk .sd-tools p:not(.sd-kicker){font-size:14px;line-height:1.9;color:#5b715c;max-width:370px;margin:0}
+.saas-desk .sd-tool-links a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:19px 0;border-bottom:1px solid #bccdb1;font-size:15px;font-weight:600;text-decoration:none}
+.saas-desk .sd-tool-links a:first-child{padding-top:0}
+.saas-desk .sd-tool-links small{display:block;font-size:11px;font-weight:400;color:#587254;margin-top:8px}
+.saas-desk .sd-tool-links a:hover{color:#287a48}
+.saas-desk .sd-archive{padding:25px 0 30px;border-bottom:1px solid #d0ddc9}
+.saas-desk .sd-archive h2{font-family:'Sora',sans-serif;font-size:25px;letter-spacing:-.04em;margin:0 0 12px}
+.saas-desk .sd-archive p{font-size:14px;color:#60755d;line-height:1.9;margin:0 0 15px}
+.saas-desk .sd-archive a{display:inline-block;margin:0 25px 12px 0;font-size:13px;text-underline-offset:4px}
+.saas-desk .sd-editorial-note{font-size:12px;line-height:1.9;color:#687b62;max-width:850px;margin:25px 0 0}
+.saas-desk a:focus-visible,.saas-desk button:focus-visible,.saas-desk select:focus-visible{outline:3px solid #76a36c;outline-offset:5px}
+.saas-article{font-family:'Manrope',sans-serif;color:#234531}
+.saas-article .sc-wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.saas-article .breadcrumbs{margin:35px 0;font-size:12px;line-height:1.8;color:#5e745e}
+.saas-article .sc-article-header{max-width:980px;padding:18px 0 40px}
+.saas-article h1{font-family:'Sora',sans-serif;font-size:clamp(2.3rem,5vw,4.3rem);line-height:1.13;letter-spacing:-.055em;font-weight:700;margin:0 0 24px}
+.saas-article .sc-intro{font-size:19px;line-height:1.8;max-width:740px;color:#546c55;margin:0 0 25px}
+.saas-article .sc-meta{display:flex;gap:12px 22px;flex-wrap:wrap;font-size:12px;color:#61755f;line-height:1.8;margin:0 0 25px}
+.saas-article .sd-method{font-size:12px;line-height:1.9;max-width:770px;color:#60745e;border-left:2px solid #8aaa7a;padding-left:18px;margin:0 0 22px}
+.saas-article .sd-download{display:inline-flex;gap:20px;font-weight:700;font-size:13px;text-underline-offset:5px}
+.saas-article .sc-article-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:55px;align-items:start;padding-top:36px;border-top:1px solid #ccdac6}
+.saas-article .sc-toc{position:sticky;top:128px;font-size:12px;line-height:1.8}
+.saas-article .sc-toc p{font-weight:700;font-size:11px;letter-spacing:.13em;color:#3a6547;margin:0 0 18px}
+.saas-article .sc-toc ul{list-style:none;padding:0;margin:0;display:grid;gap:15px}
+.saas-article .sc-toc a{color:#56745b;text-decoration:none}
+.saas-article .sc-toc a:hover{text-decoration:underline;color:#236d48}
+.saas-article .sc-article-body{max-width:730px;background:transparent;min-width:0;font-size:17px;line-height:1.95}
+.saas-article .sc-article-body h2{font-family:'Sora',sans-serif;font-weight:600;font-size:clamp(1.6rem,2.4vw,2.1rem);letter-spacing:-.045em;line-height:1.28;margin:46px 0 22px;scroll-margin-top:130px}
+.saas-article .sc-article-body h2:first-child{margin-top:0}
+.saas-article .sc-article-body p{margin:0 0 20px}
+.saas-article .sc-article-body a:not(.tc-cta){color:#2c6b42;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.saas-article .sc-article-body ul,.saas-article .sc-article-body ol{padding-left:23px;margin:16px 0 25px}
+.saas-article .sc-article-body li{margin-bottom:13px}
+.saas-article .sd-table{max-width:100%;overflow-x:auto;margin:28px 0 30px;border-radius:8px;border:1px solid #d5dfce}
+.saas-article .sd-table table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.8;min-width:470px}
+.saas-article .sd-table th{background:#244b34;color:#eef4e7;text-align:left;font-weight:600;padding:14px}
+.saas-article .sd-table td{background:#f5f8ef;border-bottom:1px solid #dce5d5;padding:14px;vertical-align:top}
+.saas-article .sd-table tr:nth-child(even) td{background:#ebf1e3}
+.saas-article .sc-sources{border-top:1px solid #d2decb;margin-top:45px;padding-top:30px;font-size:14px;line-height:1.9}
+.saas-article .sc-related{border-top:1px solid #d2decb;margin-top:35px;padding-top:30px;font-size:15px}
+.saas-article .sd-roi{padding:28px;border:1px solid #c6d7bd;border-radius:18px;background:#e8efdf;margin:30px 0;scroll-margin-top:125px}
+.saas-article .sd-roi h3{font-family:'Sora',sans-serif;font-size:25px;line-height:1.3;margin:0 0 17px;letter-spacing:-.04em}
+.saas-article .sd-roi .sd-kicker{font-size:10px;font-weight:700;letter-spacing:.13em;color:#46704b;margin-bottom:14px}
+.saas-article .sd-roi .sd-roi-note{font-size:12px;line-height:1.8;color:#56734e;margin:16px 0}
+.saas-article .sd-roi-fields{display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;margin:22px 0 25px}
+.saas-article .sd-roi label{font-size:12px;line-height:1.6;font-weight:600;display:block;color:#385b3c}
+.saas-article .sd-roi input{display:block;max-width:100%;width:100%;min-width:0;border:1px solid #a5bb96;background:#fff;border-radius:8px;font-size:16px;line-height:1.4;color:#1c3e28;padding:12px;margin-top:9px}
+.saas-article .sd-roi-results{border-top:1px solid #bfd0b3;padding-top:18px;margin-top:24px}
+.saas-article .sd-roi-results p{display:flex;justify-content:space-between;gap:20px;align-items:baseline;font-size:13px;line-height:1.7;margin:0 0 12px}
+.saas-article .sd-roi-results strong{font-family:'Sora',sans-serif;font-size:20px;font-weight:600;letter-spacing:-.04em;max-width:70%;text-align:right;overflow-wrap:anywhere}
+.saas-article .sd-roi-error{font-size:13px;color:#953e2b;margin-top:15px}
+.saas-article .sd-roi input[aria-invalid=true]{border-color:#953e2b}
+@media(max-width:1000px){.saas-desk .sd-hero{gap:35px;grid-template-columns:1.1fr 1fr}.saas-desk h1{font-size:clamp(2.7rem,6vw,4.3rem)}.saas-desk .sd-demo{padding:24px 22px}.saas-desk .sd-flow-node{display:block}.saas-desk .sd-flow-node span{display:block;margin-bottom:5px}.saas-desk .sd-stories{gap:24px}.saas-desk .sd-story h3{font-size:19px}}
+@media(max-width:850px){.saas-desk .sd-wrap{padding:0 25px}.saas-desk .sd-hero{grid-template-columns:1fr;gap:35px;align-items:start}.saas-desk h1{font-size:clamp(3rem,8vw,4.5rem)}.saas-desk .sd-demo{max-width:100%;width:100%}.saas-desk .sd-flow{grid-template-columns:1fr 20px 1fr 20px 1fr;align-items:center}.saas-desk .sd-flow-arrow{transform:rotate(-90deg)}.saas-desk .sd-flow-node{height:100%;padding:13px}.saas-desk .sd-paths nav{grid-template-columns:1fr 1fr}.saas-desk .sd-cluster-heading{align-items:start}.saas-desk .sd-tools{gap:30px;padding:30px}.saas-article .sc-wrap{padding:0 25px}.saas-article .sc-article-layout{grid-template-columns:1fr;gap:35px}.saas-article .sc-toc{position:static;border-bottom:1px solid #d2decb;padding-bottom:26px}.saas-article .sc-toc ul{grid-template-columns:1fr 1fr;gap:10px 24px}.saas-article .sc-article-body{max-width:none}}
+@media(max-width:600px){.saas-desk .sd-wrap{padding:0 22px}.saas-desk .sd-breadcrumb{font-size:11px;padding:28px 0}.saas-desk h1{font-size:clamp(2.55rem,10.8vw,3.5rem)}.saas-desk .sd-deck{font-size:16px;line-height:1.85}.saas-desk .sd-hero{padding-bottom:38px}.saas-desk .sd-demo{padding:23px 20px}.saas-desk .sd-demo h2{font-size:26px}.saas-desk .sd-flow{display:grid;grid-template-columns:1fr}.saas-desk .sd-flow-arrow{transform:none}.saas-desk .sd-flow-node{display:flex;gap:16px}.saas-desk .sd-flow-node span{margin:0}.saas-desk .sd-demo-top{font-size:9px;gap:10px}.saas-desk .sd-paths nav{gap:5px 20px}.saas-desk .sd-paths nav a{font-size:12px;line-height:1.7;align-items:start;min-height:68px}.saas-desk .sd-cluster{padding:38px 0}.saas-desk .sd-cluster-heading{display:block;margin-bottom:24px}.saas-desk .sd-cluster h2{font-size:30px}.saas-desk .sd-cluster-heading>p{margin-top:16px}.saas-desk .sd-stories{grid-template-columns:1fr;gap:29px}.saas-desk .sd-story h3{font-size:22px}.saas-desk .sd-story>p:not(.sd-story-type){font-size:14px}.saas-desk .sd-tools{grid-template-columns:1fr;padding:27px 23px;gap:28px;margin-top:40px}.saas-desk .sd-tools h2{font-size:30px}.saas-desk .sd-tool-links a{font-size:14px}.saas-desk .sd-archive h2{font-size:24px}.saas-article .sc-wrap{padding:0 22px}.saas-article .breadcrumbs{font-size:11px;margin:28px 0 22px}.saas-article .sc-article-header{padding:15px 0 30px}.saas-article h1{font-size:2.35rem}.saas-article .sc-intro{font-size:17px;line-height:1.8}.saas-article .sc-toc ul{grid-template-columns:1fr}.saas-article .sc-article-body{font-size:16px;line-height:1.9}.saas-article .sc-article-body h2{font-size:1.65rem}.saas-article .sd-roi{padding:24px 18px}.saas-article .sd-roi-fields{grid-template-columns:1fr;gap:18px}.saas-article .sd-roi-results p{display:block}.saas-article .sd-roi-results strong{display:block;max-width:100%;text-align:left;margin:7px 0 15px}.saas-article .sd-roi .tc-cta{font-size:12px;gap:15px}}
+@media(prefers-reduced-motion:reduce){.saas-desk .sd-flow-node,.saas-desk #workflow-run{transition:none!important}}

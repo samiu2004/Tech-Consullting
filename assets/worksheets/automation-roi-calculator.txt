@@ -1,0 +1,27 @@
+Automation ROI Calculator: Cost, Capacity and Payback
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Setup cost:
+
+Recurring monthly cost including administration:
+
+Estimated monthly hours released:
+
+Assigned value per hour:
+
+Capacity or cash benefit?:
+
+Low/base/high scenarios:
+
+Measured pilot results:
+
+Decision owner:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/automation-roi-calculator

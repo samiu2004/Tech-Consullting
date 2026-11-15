@@ -1,0 +1,33 @@
+Before You Buy SaaS: Test the Exit, Not Just the Demo
+TechConsulting planning worksheet
+
+Use approved business information; keep sensitive details in your authorized systems.
+
+Required task:
+
+Success criterion:
+
+Role/permissions:
+
+Test data approval:
+
+Export coverage:
+
+Integration owner:
+
+Full cost:
+
+Exit terms:
+
+Evidence:
+
+Pass/fail/unknown:
+
+Decision:
+
+
+Owner:
+Review date:
+Evidence and unresolved questions:
+
+Guide: https://techconsulting.online/evaluate-saas-before-buying
